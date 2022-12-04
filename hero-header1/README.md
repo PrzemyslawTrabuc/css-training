@@ -2,7 +2,7 @@
  Hero header based on figma desing by Daniel Geo: https://www.figma.com/community/file/1137340600511169981
 
 ## LIVE
-https://przemyslawtrabuc.github.io/hero-header1/
+https://coral-mavra-71.tiiny.site/
 
 ## Features
 
@@ -22,7 +22,7 @@ https://przemyslawtrabuc.github.io/hero-header1/
 ## Installation
 1. Download repo
 2. Run index.html
-3. or check live: https://przemyslawtrabuc.github.io/hero-header1/
+3. or check live: https://coral-mavra-71.tiiny.site/
 
 ## Screenshots
 
