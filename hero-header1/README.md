@@ -2,7 +2,7 @@
  Hero header based on figma desing by Daniel Geo: https://www.figma.com/community/file/1137340600511169981
 
 ## LIVE
-https://storied-otter-fe4ef0.netlify.app/
+https://hero-header-1-pt.netlify.app/
 
 ## Features
 
@@ -22,7 +22,7 @@ https://storied-otter-fe4ef0.netlify.app/
 ## Installation
 1. Download repo
 2. Run index.html
-3. or check live: https://storied-otter-fe4ef0.netlify.app/
+3. or check live: https://hero-header-1-pt.netlify.app/
 
 ## Screenshots
 
