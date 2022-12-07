@@ -7,16 +7,12 @@ const dotsContainer = document.querySelector(".slider__dots");
 function prevSlide() {
   if (activeSlideIndex - 1 >= 0) {
     sliderImages[activeSlideIndex - 1].scrollIntoView({ behavior: "smooth" });
-    // activeSlideIndex -= 1;
-    // selectCurrentSlide(activeSlideIndex);
   }
 }
 
 function nextSlide() {
   if (activeSlideIndex + 1 <= sliderImages.length - 1) {
     sliderImages[activeSlideIndex + 1].scrollIntoView();
-    // activeSlideIndex += 1;
-    // selectCurrentSlide(activeSlideIndex);
   }
 }
 function scrollToSlide(slideIndex) {
@@ -60,7 +56,6 @@ sliderScrollableElement.addEventListener("scroll", () => {
 
   selectCurrentSlide(activeSlideIndex);
 
-  console.log("activeSlideIndex: " + activeSlideIndex);
 });
 
 selectCurrentSlide(0);
