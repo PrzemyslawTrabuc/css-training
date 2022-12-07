@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(27, 27, 27);
+  margin: 0;
+}
+
+.slider {
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 1);
+  border: solid 1px rgb(68, 68, 68);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slider-items {
+  overflow-x: auto;
+  height: 70vh;
+  width: 80vw;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slider-items > img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+
+.slider-items::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-items > img.active {
+  opacity: 1;
+}
+
+.slider__navigation {
+  display: flex;
+  color: black;
+}
+
+.slider__button--next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-100%);
+  background-color: aliceblue;
+  padding: 10px;
+}
+.slider__button--prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-100%);
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+.snow-container:before {
+  box-sizing: border-box;
+  background-image: url("./Snowflake-Pattern.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  padding: 100px;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.slider__dots {
+  width: auto;
+  flex-grow: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.slider__dots > button {
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 1px solid aliceblue;
+  margin: 2px;
+  background-color: none;
+  background-color: rgb(0, 0, 0, 0);
+  width: 20px;
+  height: 20px;
+}
+.slider__dots > button:hover {
+  background-color: aliceblue;
+}
+
+.slider__dots > button.active {
+  background-color: aliceblue !important;
+}
