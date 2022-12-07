@@ -26,5 +26,6 @@ https://carousel-1-pt.netlify.app/
 
 ## Screenshots
 
+![App Screenshot](carousel.png)
 ![App Screenshot](carousel.gif)
 ![App Screenshot](carousel-mobile.png)
