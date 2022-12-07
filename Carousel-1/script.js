@@ -18,8 +18,6 @@ function nextSlide() {
 function scrollToSlide(slideIndex) {
   if (slideIndex <= sliderImages.length - 1) {
     sliderImages[slideIndex].scrollIntoView();
-    activeSlideIndex = slideIndex;
-    selectCurrentSlide(activeSlideIndex);
   }
 }
 
